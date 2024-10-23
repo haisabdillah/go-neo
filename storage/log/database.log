@@ -1,0 +1,12 @@
+{"time":"2024-09-25T00:08:59.7452067+07:00","level":"ERROR","msg":"failed to initialize database, got error %v","!BADKEY":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:08:59.745335904+07:00","level":"ERROR","msg":"Failed to connect to database","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:41.78167191+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:44.57335484+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:46.261463146+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:47.08221568+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:47.920553957+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:48.874211086+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:49.823596284+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:53.358556054+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:12:54.774450915+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
+{"time":"2024-09-25T00:13:02.510857957+07:00","level":"ERROR","msg":"SQL Error","error":"dial tcp 172.17.0.1:3306: connect: connection refused"}
