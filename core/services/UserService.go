@@ -29,24 +29,11 @@ func (s *Service) UserCreate(req *dto.UserDto) error {
 	return nil
 }
 
-func (s *Service) UserFirst(req *dto.UserDto) error {
-	user := models.User{
-		Name:     req.Name,
-		Email:    req.Email,
-		Password: req.Password,
+func (s *Service) UserFirst(id string) (interface{}, error) {
+
+	result := models.User{}
+	if err := s.db.Where("id =?", id).First(&result).Error; err != nil {
+		return nil, errors.NotFound("User not found")
 	}
-	existEmail := models.User{}
-	s.db.Model(models.User{}).Where("email =?", user.Email).First(&existEmail)
-	if existEmail.Email != "" {
-		return errors.BadRequest(map[string]string{"email": "UNIQUE"})
-	}
-	hashPassword, err := hash.Generate(user.Password)
-	if err != nil {
-		return errors.InternalServer(err)
-	}
-	user.Password = hashPassword
-	if err := s.db.Create(&user).Error; err != nil {
-		return errors.InternalServer(err)
-	}
-	return nil
+	return result, nil
 }
